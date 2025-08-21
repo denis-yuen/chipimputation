@@ -1,0 +1,13 @@
+version: 1.2
+workflows:
+  - subclass: NFL
+    primaryDescriptorPath: /nextflow.config 
+  - subclass: NFL
+    primaryDescriptorPath: /combine_report_dsl2.nf
+    name: combine_report_dsl2
+  - subclass: NFL
+    primaryDescriptorPath: /main-dsl2_imp5.nf
+    name: main-dsl2_imp5 
+  - subclass: NFL
+    primaryDescriptorPath: /main_old.nf
+    name: main_old 
